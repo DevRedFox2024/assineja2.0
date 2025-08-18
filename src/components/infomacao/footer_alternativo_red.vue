@@ -38,7 +38,7 @@ const handleTop = () => {
 };
 const handleWhats = () => {
   window.open(
-    "https://api.whatsapp.com/send/?phone=5511986871731&text&type=phone_number&app_absent=0",
+    "https://api.whatsapp.com/send/?phone=5511986871731&text=Vim+do+site%2C+gostaria+de+saber+sobre+os+planos.&type=phone_number&app_absent=0",
     "_blank"
   );
 };
