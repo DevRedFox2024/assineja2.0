@@ -14,6 +14,7 @@
   <div v-else>
     <Header />
     <Carrosel1SessaoMobile />
+    <BtnWhatsCelular />
     <RedfoxSection3Mobile />
     <SessaoAplicativosMobile />
     <SeessaoSobrenos4Mobile />
@@ -38,6 +39,7 @@ import SessaoAplicativosMobile from "../components/homepage/SessaoAplicativosMob
 import SeessaoSobrenos4Mobile from "../components/homepage/seessaoSobrenos4Mobile.vue";
 import Footer_alternativo_red from "../components/infomacao/footer_alternativo_red.vue";
 import FooterCelular from "../components/infomacao/footerCelular.vue";
+import BtnWhatsCelular from "../components/btnWhatsCelular.vue";
 
 const windowWidth = ref(window.innerWidth);
 

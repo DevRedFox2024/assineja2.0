@@ -112,8 +112,10 @@ const handlelead = () => {
 }
 
 .disney {
-  height: 30px;
+  height: auto;
+  max-height: 35px;
   width: auto;
+  max-width: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
