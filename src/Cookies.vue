@@ -11,10 +11,8 @@
             </v-card-title>
             <v-card-text class="texto-cookie">
               Nós utilizamos cookies para melhorar sua experiência no site. Ao
-              continuar navegando, você concorda com nossa
-              <a href="/Politicas" class="link-politica">
-                Política de Privacidade
-              </a>
+              continuar navegando, você concorda com nossa Política de
+              Privacidade.
             </v-card-text>
             <v-card-actions class="acoes-cookie">
               <v-btn
