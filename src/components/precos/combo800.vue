@@ -57,7 +57,9 @@
           </v-dialog>
         </v-col>
 
-        <v-col cols="12" class="mt-4 d-flex justify-center">
+        <v-col
+          cols="12"
+          class="mt-4 mt-md-5 mt-xl-5 mt-md-lg-5 d-flex justify-center">
           <v-btn
             @click="handlelead"
             class="buton"
