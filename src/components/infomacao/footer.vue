@@ -28,9 +28,9 @@ import logoRed from "../../assets/logoFooter.webp";
           <p class="icon">
             <v-icon style="color: var(--red)" class="icon">mdi-whatsapp</v-icon>
             <a
-              href="tel:1124842656"
+              href="tel:11986811731"
               style="color: inherit; text-decoration: none; font-size: 1rem">
-              (11) 2484-2656
+              (11) 98681-1731
             </a>
           </p>
           <p class="icon">
@@ -49,8 +49,7 @@ import logoRed from "../../assets/logoFooter.webp";
       <v-row>
         <v-col>
           <p class="text-center" style="font-size: 0.8rem">
-            © 2025 RedFox Internet - Todos os direitos reservados© 2025 RedFox
-            Internet - Todos os direitos reservados
+            © 2025 RedFox Internet - Todos os direitos reservados
           </p>
         </v-col>
       </v-row>
@@ -75,8 +74,14 @@ h2 {
   background-color: #1a1a1a;
   color: #fff;
   padding: 32px 0;
+  height: auto;
 }
-
+@media (min-width: 320px) and (max-width: 600px) {
+  .footer {
+    height: auto;
+    min-height: 60vh !important;
+  }
+}
 .footer-title {
   font-size: 1.25rem;
   font-weight: 500;

@@ -187,7 +187,7 @@ const maxDialog = ref(false);
 
 const handlelead = () => {
   window.open(
-    "https://api.whatsapp.com/send?phone=551124842656&text=Ol%C3%A1,%20Redfox!",
+    "https://api.whatsapp.com/send/?phone=5511986871731&text=Vim+do+site%2C+gostaria+de+saber+sobre+os+planos.&type=phone_number&app_absent=0",
     "_blank"
   );
 };
