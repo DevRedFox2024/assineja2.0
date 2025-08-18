@@ -19,6 +19,7 @@
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
+
       <v-row justify="center" class="mt-auto">
         <v-col cols="12" class="text-center">
           <v-btn @click="handlePlanos" color="#db0e35" class="botao">
