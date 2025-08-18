@@ -1,28 +1,35 @@
 <!-- @format -->
 
 <template>
-  <v-container class="fundo-container pa-4">
-    <v-row justify="center" class="d-flex flex-column fill-height">
-      <v-col cols="12" md="8" sm="10" class="text-center">
-        <h1 class="titulo">Seus apps favoritos inclusos no seu plano!</h1>
-
-        <p class="descricao">
-          Cliente Redfox tem preço especial na assinatura de aplicativos!
-          Entretenimento, saúde, educação... tudo junto e ainda assim mais
-          barato que qualquer flix à parte!
-        </p>
-      </v-col>
+  <v-main class="fundo-container">
+    <v-container
+      class="pa-4 d-flex flex-column"
+      style="min-height: 100vh; height: auto">
+      <v-row justify="center" class="d-flex flex-column align-center">
+        <v-col cols="12" md="9" sm="10" class="text-center">
+          <h1 class="titulo">Seus apps favoritos inclusos no seu plano!</h1>
+          <p class="descricao">
+            Cliente Redfox tem preço especial na assinatura de aplicativos!
+            Entretenimento, saúde, educação... tudo junto e ainda assim mais
+            barato que qualquer flix à parte!
+          </p>
+        </v-col>
+      </v-row>
 
       <v-spacer></v-spacer>
-
-      <v-col cols="12" class="text-center align-self-end">
-        <v-btn @click="handlePlanos" color="#db0e35" class="botao">
-          CONHEÇA NOSSOS PLANOS
-        </v-btn>
-      </v-col>
-    </v-row>
-  </v-container>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-row justify="center" class="mt-auto">
+        <v-col cols="12" class="text-center">
+          <v-btn @click="handlePlanos" color="#db0e35" class="botao">
+            CONHEÇA NOSSOS PLANOS
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-main>
 </template>
+
 <script setup>
 const handlePlanos = () => {
   window.open(
@@ -31,16 +38,15 @@ const handlePlanos = () => {
   );
 };
 </script>
+
 <style scoped>
 .fundo-container {
-  min-height: 110vh;
   background-image: url("../../assets/fundoHomiCelular.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 110vh;
+  width: 100%;
 }
 
 .titulo {
@@ -60,7 +66,6 @@ const handlePlanos = () => {
 .botao {
   border: 1px solid #fff;
   font-size: 1.2rem;
-
   font-family: "Bebas Neue", sans-serif !important;
 }
 
