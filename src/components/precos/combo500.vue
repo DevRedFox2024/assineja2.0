@@ -23,7 +23,7 @@
                   <img
                     class="disney"
                     v-bind="{ ...dialogProps, ...tooltipProps }"
-                    src="../../assets/card/iconeLooke.webp" />
+                    src="../../assets/icons/teste.png" />
                 </template>
                 <span class="conteudo-dica">
                   <strong>Looke incluído</strong><br />
@@ -35,7 +35,7 @@
             <v-card>
               <v-card-title class="d-flex align-center">
                 <v-avatar size="40" class="mr-2">
-                  <img src="../../assets/card/iconeLooke.webp" alt="Looke" />
+                  <img src="../../assets/icons/lokk.svg" alt="Looke" />
                 </v-avatar>
                 <span>Looke</span>
               </v-card-title>
@@ -152,7 +152,7 @@
           </v-dialog>
         </v-col>
 
-        <v-col cols="12" class="mt-4 d-flex justify-center">
+        <v-col cols="12" class="d-flex justify-center">
           <v-btn
             @click="handlelead"
             class="buton"
@@ -180,7 +180,7 @@
 </template>
 
 <script setup>
-import mega700 from "../../assets/card/novocard500.svg";
+import mega700 from "../../assets/card/redimecionado500.png";
 import { ref } from "vue";
 
 const disneyDialog = ref(false);
@@ -188,7 +188,7 @@ const maxDialog = ref(false);
 
 const handlelead = () => {
   window.open(
-    "https://api.whatsapp.com/send/?phone=5511986871731&text=Vim+do+site%2C+gostaria+de+saber+sobre+os+planos.&type=phone_number&app_absent=0",
+    "https://api.whatsapp.com/send?phone=551124842656&text=Ol%C3%A1,%20Redfox!",
     "_blank"
   );
 };
@@ -209,7 +209,9 @@ const handlelead = () => {
 }
 
 .disney {
-  height: 53px;
+  height: auto;
+  min-height: 50px;
+  max-height: 50px;
   width: auto;
   border-radius: 16px !important;
   cursor: pointer;
@@ -218,7 +220,9 @@ const handlelead = () => {
 }
 
 .max {
-  height: 50px;
+  height: auto;
+  min-height: 50px;
+  max-height: 51px;
   width: auto;
   cursor: pointer;
   transition: all 0.3s ease;

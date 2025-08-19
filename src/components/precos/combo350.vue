@@ -151,7 +151,7 @@
           </v-dialog>
         </v-col>
 
-        <v-col cols="12" class="mt-4 d-flex justify-center">
+        <v-col cols="12" class="d-flex justify-center">
           <v-btn
             @click="handlelead"
             class="buton"
@@ -179,7 +179,7 @@
 </template>
 
 <script setup>
-import mega700 from "../../assets/card/novocard350.svg";
+import mega700 from "../../assets/card/redimecionado350.png";
 import { ref } from "vue";
 
 const disneyDialog = ref(false);
@@ -187,7 +187,7 @@ const maxDialog = ref(false);
 
 const handlelead = () => {
   window.open(
-    "https://api.whatsapp.com/send/?phone=5511986871731&text=Vim+do+site%2C+gostaria+de+saber+sobre+os+planos.&type=phone_number&app_absent=0",
+    "https://api.whatsapp.com/send?phone=551124842656&text=Ol%C3%A1,%20Redfox!",
     "_blank"
   );
 };
@@ -211,7 +211,6 @@ const handlelead = () => {
 .max {
   height: 50px;
   width: auto;
-
   cursor: pointer;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));

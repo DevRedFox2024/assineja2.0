@@ -2,7 +2,7 @@
 
 <template>
   <v-card class="preco700" variant="outlined" hover>
-    <v-container>
+    <v-container height="auto" min-height="330" max-height="330">
       <v-row class="conteudo-imagem" no-gutters>
         <v-col cols="12" class="d-flex justify-center">
           <v-img
@@ -14,7 +14,7 @@
         </v-col>
       </v-row>
 
-      <v-row class="logos-streaming mt-4" no-gutters>
+      <v-row class="logos-streaming" no-gutters>
         <v-col cols="auto" class="d-flex align-center">
           <v-dialog v-model="ubookDialog" max-width="500">
             <template v-slot:activator="{ props: dialogProps }">
@@ -58,7 +58,7 @@
           </v-dialog>
         </v-col>
 
-        <v-col cols="12 " class="mt-4 mt-xl-5 d-flex justify-center">
+        <v-col cols="12 " class="d-flex justify-center">
           <v-btn
             @click="handlelead"
             class="buton"
@@ -77,21 +77,21 @@
       </v-row>
     </v-container>
     <br />
-    <v-row class="d-flex justify-center">
+    <v-row class="d-flex justify-center mt-5 mt-md-2">
       <p style="font-size: 0.7rem; font-weight: bold">+150 canais AO VIVO</p>
     </v-row>
   </v-card>
 </template>
 
 <script setup>
-import giga1 from "../../assets/card/combo1giga.webp";
+import giga1 from "../../assets/card/redimecionados1giga.png";
 import { ref } from "vue";
 
 const ubookDialog = ref(false);
 
 const handlelead = () => {
   window.open(
-    "https://api.whatsapp.com/send/?phone=5511986871731&text=Vim+do+site%2C+gostaria+de+saber+sobre+os+planos.&type=phone_number&app_absent=0",
+    "https://api.whatsapp.com/send?phone=551124842656&text=Ol%C3%A1,%20Redfox!",
     "_blank"
   );
 };
@@ -146,7 +146,6 @@ const handlelead = () => {
 
 .imagem700 {
   max-width: 100%;
-  padding-bottom: 70px;
   height: auto;
   left: 4%;
   object-fit: contain;
@@ -166,7 +165,7 @@ const handlelead = () => {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .conteudo-dica {
@@ -196,12 +195,13 @@ const handlelead = () => {
 @media (max-width: 600px) {
   .disney,
   .max {
-    height: 40px;
+    height: auto;
   }
 
   .preco700 {
     padding: 15px;
     max-width: 100%;
+    min-height: 420px !important;
   }
 
   .logos-streaming {
