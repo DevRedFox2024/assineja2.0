@@ -199,7 +199,7 @@ const handlelead = () => {
   }
 
   .preco700 {
-    padding: 15px;
+    padding: 25px;
     max-width: 100%;
     min-height: 420px !important;
   }

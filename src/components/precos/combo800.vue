@@ -128,7 +128,7 @@ const handlelead = () => {
   width: 100%;
   min-height: 411px !important;
   max-width: 300px;
-  max-height: 412px;
+  max-height: 430px;
   height: auto;
   padding: 20px;
   border-radius: 8px;
@@ -199,7 +199,8 @@ const handlelead = () => {
   }
 
   .preco700 {
-    padding: 15px;
+        padding: 25px;
+    height: auto;
     max-width: 100%;
   }
 

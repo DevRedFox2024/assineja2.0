@@ -3,7 +3,7 @@
 <template>
   <v-main class="redfox-section3">
     <v-container class="d-flex justify-center">
-      <v-col cols="12" class="text-center px-4">
+      <v-col cols="12" md="10" class="text-center px-4">
         <v-row justify="center">
           <v-col cols="12">
             <h1 class="text-h5 font-weight-bold mb-2 titulo">
@@ -64,7 +64,7 @@
                 <v-icon left>mdi-star</v-icon>
                 Internet Ultra Rápida
               </v-chip>
-              <v-row>
+              <v-row >
                 <v-col cols="12" md="6">
                   <Combo800 />
                 </v-col>
